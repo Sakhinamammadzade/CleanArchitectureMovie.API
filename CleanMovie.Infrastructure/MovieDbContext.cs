@@ -16,6 +16,12 @@ namespace CleanMovie.Infrastructure
         {
 
         }
+        
+        private static void NewMethod(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=CleanMovieDb;Trusted_Connection=True;MultipleActiveResultSets=true");
+        }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             // One to Many (Member and Rentals)

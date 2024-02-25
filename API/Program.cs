@@ -1,6 +1,8 @@
-using CleanMovie.Application;
+using CleanMovie.Application.@abstract;
+using CleanMovie.Application.concrate;
 using CleanMovie.Infrastructure;
 using Microsoft.EntityFrameworkCore;
+using IMovieRepository = CleanMovie.Application.@abstract.IMovieRepository;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,8 +19,7 @@ builder.Services.AddSwaggerGen();
 
 //Add Database Service
 
-builder.Services.AddDbContext<MovieDbContext>(opt => opt.UseSqlServer(configuration.GetConnectionString("DefaultConnection"),
-     b => b.MigrationsAssembly("CleanMovie.API")));
+
 builder.Services.AddScoped<IMovieService, MovieService>();
 builder.Services.AddScoped<IMovieRepository, MovieRepository>();
 

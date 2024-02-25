@@ -1,4 +1,4 @@
-﻿using CleanMovie.Application;
+﻿using CleanMovie.Application.@abstract;
 using CleanMovie.Domain;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;

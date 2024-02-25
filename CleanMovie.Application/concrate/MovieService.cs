@@ -1,11 +1,12 @@
-﻿using CleanMovie.Domain;
+﻿using CleanMovie.Application.@abstract;
+using CleanMovie.Domain;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CleanMovie.Application
+namespace CleanMovie.Application.concrate
 {
     public class MovieService : IMovieService
     {

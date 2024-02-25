@@ -5,11 +5,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CleanMovie.Application
+namespace CleanMovie.Application.@abstract
 {
-    public interface IMovieRepository
+    public interface IMovieService
     {
         List<Movie> GetAllMovies();
         Movie CreateMovie(Movie movie);
+
     }
 }

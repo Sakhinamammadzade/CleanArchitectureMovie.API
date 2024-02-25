@@ -1,4 +1,5 @@
-﻿using CleanMovie.Domain;
+﻿using CleanMovie.Application.@abstract;
+using CleanMovie.Domain;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -31,9 +32,5 @@ namespace CleanMovie.Infrastructure
         }
     }
 
-    public interface IMovieRepository
-    {
-        List<Movie> GetAllMovies();
-        Movie CreateMovie(Movie movie);
-    }
+    
 }
