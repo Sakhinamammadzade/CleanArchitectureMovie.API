@@ -45,5 +45,17 @@ namespace CleanMovie.Application.concrate
                 throw;
             }
         }
+
+        public Movie GetById(int id)
+        {
+           var movie = _movieRepository.GetById(id);
+            return movie;
+        }
+
+        public Movie UpdateMovie(Movie movie)
+        {
+           var updatedMovie = _movieRepository.UpdateMovie(movie);
+            return updatedMovie;
+        }
     }
 }

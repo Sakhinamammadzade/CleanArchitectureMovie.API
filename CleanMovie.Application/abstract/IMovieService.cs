@@ -12,5 +12,8 @@ namespace CleanMovie.Application.@abstract
         List<Movie> GetAllMovies();
         Movie CreateMovie(Movie movie);
 
+        Movie UpdateMovie(Movie movie);
+        Movie GetById(int id);
+
     }
 }
